@@ -1,0 +1,15 @@
+# 项目排除路径
+/liu-springcloud-api/target/
+/liu-springcloud-consumer/target/
+/liu-springcloud-consumer-feign/target/
+/liu-springcloud-consumer-hystrix-dashboard/target/
+/liu-springcloud-eureka-server/target/
+/liu-springcloud-eureka-server2/target/
+/liu-springcloud-eureka-server3/target/
+/liu-springcloud-hystrix-provider/target/
+/liu-springcloud-hystrix-provider2/target/
+/liu-springcloud-provider/target/
+/liu-springcloud-provider2/target/
+/liu-springcloud-provider3/target/
+/liu-springcloud-provider4/target/
+/liu-springcloud-zuul-gateway/target/

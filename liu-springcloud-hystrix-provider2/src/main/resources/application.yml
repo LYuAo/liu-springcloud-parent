@@ -1,0 +1,70 @@
+server:
+  port: 8012
+mybatis:
+    #     config-location: classpath :mybatis/mybatis.cfg.xml #mybatis配置文忤所在路
+    type-aliases-package: com.bdqn.pojo #所有Entity别名英所在包
+    mapper-locations: classpath:com/liu/pro/**/*.xml  #mapper决射文忤
+spring:
+  application:
+    name: Provider
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/studentdb2?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=GMT
+    username: root
+    password: 251124
+    type: com.alibaba.druid.pool.DruidDataSource
+    #Spring Boot 默认是不注入这些属性值的，需要自己绑定
+    #druid 数据源专有配置
+    initialSize: 5
+    minIdle: 5
+    maxActive: 20
+    maxWait: 60000
+    timeBetweenEvictionRunsMillis: 60000
+    minEvictableIdleTimeMillis: 300000
+    validationQuery: SELECT 1 FROM DUAL
+    testWhileIdle: true
+    testOnBorrow: false
+    testOnReturn: false
+    poolPreparedStatements: true
+
+    #配置监控统计拦截的filters，stat:监控统计、log4j：日志记录、wall：防御sql注入
+    #如果允许时报错  java.lang.ClassNotFoundException: org.apache.log4j.Priority
+    #则导入 log4j 依赖即可，Maven 地址：https://mvnrepository.com/artifact/log4j/log4j
+    filters: stat,wall,log4j
+    maxPoolPreparedStatementPerConnectionSize: 20
+    useGlobalDataSourceStat: true
+    connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=500
+  redis:
+    database: 4
+    host: 127.0.0.1
+    port: 6379
+    jedis:
+      pool:
+        max-active: 8
+        max-wait: 1
+        max-idle: 8
+        min-idle: 0
+    timeout: 5000
+    lettuce:
+      shutdown-timeout: 500
+
+eureka:
+  client:
+    service-url:
+      #defaultZone: http://localhost:7001/eureka
+      defaultZone: http://eureka7001.com:7001/eureka/,http://eureka7002.com:7002/eureka/,http://eureka7003.com:7003/eureka/
+  instance:
+    instance-id: providersHystrixTwo #修改eureka默认描述信息
+    prefer-ip-address: true
+info: #info配置
+  app.name: liu-could
+  company.name: com.liu
+                    #$project.artifactId$
+  build.artifactid: ${project.artifactId}   #项目名称
+  build.version: ${project.artifactId}   #版本信息
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: hystrix.stream

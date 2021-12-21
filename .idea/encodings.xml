@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/liu-springcloud-api/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/liu-springcloud-api/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/liu-springcloud-config-server-3344/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/liu-springcloud-consumer-feign/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/liu-springcloud-consumer-hystrix-dashboard/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/liu-springcloud-consumer/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/liu-springcloud-consumer/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/liu-springcloud-eureka-server/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/liu-springcloud-eureka-server/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/liu-springcloud-eureka-server2/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/liu-springcloud-eureka-server2/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/liu-springcloud-eureka-server3/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/liu-springcloud-eureka-server3/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/liu-springcloud-hystrix-provider/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/liu-springcloud-hystrix-provider2/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/liu-springcloud-provider/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/liu-springcloud-provider/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/liu-springcloud-provider2/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/liu-springcloud-provider2/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/liu-springcloud-provider3/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/liu-springcloud-provider4/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/liu-springcloud-zuul-gateway/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/liu-springcloud-zuul-gateway/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
+  </component>
+</project>

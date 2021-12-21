@@ -1,0 +1,22 @@
+server:
+  port: 7003
+eureka:
+  server:
+    enable-self-preservation: true    #false关闭自我保护机制(不推荐)
+    eviction-interval-timer-in-ms: 10000 # 清理间隔（单位毫秒，默认是60*1000）
+  instance:
+    hostname: eureka7003.com #服务器列表Ip
+    lease-renewal-interval-in-seconds: 30 # 续约更新时间间隔（默认30秒）
+    lease-expiration-duration-in-seconds: 60  # 续约到期时间（默认90秒）
+  client:
+    fetch-registry: false    #要不要去注册中心获取其他服务的地址 , 解决eureka启动时报错，表示自己为服务中心
+    register-with-eureka: false    #是否向eureka注册中心注册自己
+    service-url:   #监控页面
+      #单机http://${eureka.instance.hostname}:${server.port}/eureka/
+      #集群(关联)
+      defaultZone: http://eureka7001.com:7001/eureka/,http://eureka7002.com:7002/eureka/
+    healthcheck:
+      enabled: true  # 开启健康检查（需要spring-boot-starter-actuator依赖）
+
+
+

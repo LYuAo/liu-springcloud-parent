@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="liu-springcloud-provider" />
+        <module name="liu-springcloud-hystrix-provider2" />
+        <module name="liu-springcloud-consumer-hystrix-dashboard" />
+        <module name="liu-springcloud-config-server-3344" />
+        <module name="liu-springcloud-api" />
+        <module name="liu-springcloud-consumer-feign" />
+        <module name="liu-springcloud-hystrix-provider" />
+        <module name="liu-springcloud-provider3" />
+        <module name="liu-springcloud-provider4" />
+        <module name="liu-springcloud-eureka-server" />
+        <module name="liu-springcloud-provider2" />
+        <module name="liu-springcloud-zulu-gateway" />
+        <module name="liu-springcloud-eureka-server3" />
+        <module name="liu-springcloud-eureka-server2" />
+        <module name="liu-springcloud-consumer" />
+      </profile>
+    </annotationProcessing>
+  </component>
+</project>
